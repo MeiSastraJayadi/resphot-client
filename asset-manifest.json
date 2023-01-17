@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/resphot-client/static/css/main.bb352a50.css",
-    "main.js": "/resphot-client/static/js/main.e4da7537.js",
+    "main.js": "/resphot-client/static/js/main.63bdabb4.js",
     "static/js/787.99d43a16.chunk.js": "/resphot-client/static/js/787.99d43a16.chunk.js",
     "static/media/ilustration.png": "/resphot-client/static/media/ilustration.d9877292cba13790c81f.png",
     "static/media/LogoResphot.png": "/resphot-client/static/media/LogoResphot.7e4f5bad7e643e822046.png",
     "static/media/upload-removebg-preview.png": "/resphot-client/static/media/upload-removebg-preview.a3c33df4edff2b5c2431.png",
     "index.html": "/resphot-client/index.html",
     "main.bb352a50.css.map": "/resphot-client/static/css/main.bb352a50.css.map",
-    "main.e4da7537.js.map": "/resphot-client/static/js/main.e4da7537.js.map",
+    "main.63bdabb4.js.map": "/resphot-client/static/js/main.63bdabb4.js.map",
     "787.99d43a16.chunk.js.map": "/resphot-client/static/js/787.99d43a16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb352a50.css",
-    "static/js/main.e4da7537.js"
+    "static/js/main.63bdabb4.js"
   ]
 }
