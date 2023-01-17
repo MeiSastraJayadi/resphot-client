@@ -1,38 +1,249 @@
+body {
+    overflow: hidden; 
+}
+
 .App {
-  text-align: center;
+    display: flex; 
+    justify-content: flex-start; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first {
+    width : 55vw; 
+    height: 200vh;  
+    background-color: #fff; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.second {
+    width: 45vw; 
+    height: 200vh; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.second .rightside {
+    background-image: linear-gradient(to right bottom, #6C00FF, #3C79F5, #2DCDDF); 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-content: center; 
+    align-items: center; 
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.upload-border {
+    display: flex; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center; 
+    position: relative;
+    flex-direction: column; 
+    border: 5px dashed #000; 
+    border-radius: 20px; 
+    margin-top: 60px;  
+    margin-left: 50px; 
+    margin-right: 50px; 
+    height: 70vh; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.for-file {
+    width: 50%; 
+    /*margin-top: 20px; */
+    margin-left: 25%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    align-content:center; 
+    background-color: #6C00FF; 
+    color: #fff; 
+    border-radius: 20px; 
 }
+
+.upload-border img {
+    width: 400px; 
+    height: 300px; 
+}
+
+.for-file label {
+    margin: 10px; 
+}
+
+.for-file input[type='file'] {
+    display: none; 
+}
+
+.rightside img {
+    width: 480px; 
+    height: 380px; 
+}
+
+.rightside .for-text {
+    display: flex; 
+    width: 45vw; 
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 40px; 
+}
+
+.rightside .for-text h1 {
+    color: #fff; 
+    margin: 0;
+    text-align: right;
+    font: bold;
+    font-size: 45px;
+}
+
+.rightside .for-text p {
+    text-align: right; 
+    color: #fff;
+    font-size: 25px;
+    width: 500px; 
+}
+
+#wrapper {
+    width: 96%; 
+    height: 96%; 
+}
+
+#wrapper button {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #6C00FF;
+    color: #fff;
+    border: none;
+}
+
+#wrapper button#restored-btn {
+    position: absolute;
+    top : 50%; 
+    right: 40%; 
+}
+
+#wrapper .two-btn {
+    position: absolute;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    align-content: center;
+    top: 40%; 
+    right: 38%;
+}
+
+#wrapper .two-btn button {
+    margin: 4px;
+    font-size: 12px;
+}
+
+#wrapper button a {
+    text-decoration: none; 
+    color: #fff;
+}
+
+#wrapper button:hover {
+    cursor: pointer;
+}
+
+#preview {
+    width: 100%; 
+    height: 100%;
+}
+
+@media only screen and (max-width : 600px) {
+    body {
+        overflow-y: scroll;
+    }
+    .App {
+        flex-direction: column-reverse;
+    }
+
+    .navigation {
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        z-index: 100;
+    }
+    .first {
+        width: 100%;
+        height: 80vh;
+    }
+    .second {
+        width: 100%;
+        height: 148vh;
+    }
+
+    .rightside img {
+        margin-top: 60px;
+        width: 300px; 
+        height: 400px;
+    }
+
+    .rightside .for-text {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .rightside .for-text h1 {
+        font-size: 40px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .rightside .for-text p {
+        text-align: center;
+        font-size: 17px;
+        width: 70%;
+    }
+
+    .upload {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        align-content: center;
+    }
+
+    .upload .upload-border {
+        width: 80%;
+        height: 60%;
+        margin: 0;
+    }
+
+    .upload-border img {
+        width: 150px; 
+        height: 180px; 
+    }
+
+    .upload-border .for-file {
+        width: 90%;
+        margin: 0;
+        margin-left: 10px; 
+        margin-bottom: 24px; 
+    }
+
+    #wrapper button#restored-btn {
+        right: 30%;
+        top: 44%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #wrapper .two-btn {
+        right: 30%;
+        top: 28%;
+    }
+
+    #wrapper .two-btn button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
+
+
+
