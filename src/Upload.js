@@ -16,7 +16,8 @@ const Upload = () => {
     }
 
 
-    const doRestored = () => {
+    const doRestored = (event) => {
+        event.preventDefault()
         setFetch(true)
         const form = new FormData()
         form.append("file", result)
@@ -33,7 +34,8 @@ const Upload = () => {
             .catch(error => {setFetch(false); console.log(error)})
     }
 
-    const doColorized = () => {
+    const doColorized = (event) => {
+        event.preventDefault()
         setFetch(true)
         const form = new FormData()
         form.append("file", result)
